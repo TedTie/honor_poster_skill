@@ -1,0 +1,8 @@
+interface:
+  display_name: "Honor Poster Skill"
+  short_description: "Create 51Talk-style achievement posters with Toki."
+  brand_color: "#D71920"
+  default_prompt: "Use $honor-poster-skill to create a 51Talk-style personal achievement poster."
+
+policy:
+  allow_implicit_invocation: true
