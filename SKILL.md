@@ -48,6 +48,7 @@ Use bundled visual references when creating poster prompts:
 
 ## Production Rules
 
+- Honor-poster DNA is mandatory. Every output must first read as a personal honor/achievement poster: clear title, congratulation/target-hit message, portrait focus, name, team, personal title, 51Talk brand, and Toki support. The month/theme only changes the visual flavor, symbols, colors, props, and motion.
 - Prefer an ImageGen-first workflow: the main poster should be one integrated generated design, not a locally assembled layout.
 - Highest portrait rule: preserve the supplied portrait. Do not use ImageGen to reinterpret, repaint, beautify, face-swap, change expression, change hairstyle, change clothing, slim the body, or alter identity.
 - Do not cut out/remove the portrait background unless the user explicitly asks. Use the original photo as a rectangular, rounded-rectangle, oval, arch, magazine-card, medal, stage-screen, or premium photo-window layer.
@@ -65,6 +66,7 @@ Use bundled visual references when creating poster prompts:
 
 - Reusing the last poster's Toki pose, location, or prop when the new theme calls for a different role.
 - Letting 618, shopping, coupons, gifts, fireworks, ribbons, city lights, trophies, coins, and slogans all appear at once. A honor poster needs focus.
+- Letting a theme take over the poster type. For example, `618 销冠` is still a sales champion honor poster with light 618 cues, not an e-commerce sale banner.
 - Using the personal title as the main campaign title or motivational line.
 - Treating local code shapes and fonts as the poster design instead of using ImageGen for the whole visual.
 - Letting ImageGen recreate the person and accidentally changing their face, body, clothing, or expression.

@@ -2,6 +2,8 @@
 
 ## Visual DNA
 
+The poster type is always a personal honor/achievement poster. Theme changes are allowed only inside this honor-poster structure; they should influence colors, symbols, props, motion, seasonality, and material style, but must not change the work into an e-commerce ad, event flyer, product poster, or generic campaign banner.
+
 The user likes high-impact honor posters. Choose the visual language from the current month/theme instead of treating any single motif as mandatory. Common optional ingredients include:
 
 - red-gold celebration palettes when the theme suits prestige, sales victory, or festive moments,
@@ -13,6 +15,21 @@ The user likes high-impact honor posters. Choose the visual language from the cu
 - readable name/team/personal-title hierarchy.
 
 Use dynamic references for movement, depth, and material richness only when they support the theme. Other themes may use cleaner business styling, summer color, sporty sky/blue motion, youthful pop visuals, or calmer premium layouts. Do not turn a personal honor poster into a crowded shopping advertisement.
+
+## Non-Negotiable Honor DNA
+
+Every poster must preserve these signals:
+
+- a clear honor/achievement title,
+- a congratulation or target-hit message,
+- the supplied portrait as the central recognition subject,
+- exact name, team, and personal title,
+- 51Talk brand presence,
+- Toki as a supporting branded mascot,
+- campaign copy that praises performance rather than sells a product,
+- theme elements used as decoration/support, not as the main poster category.
+
+For example, `6月 618 销冠` should become a personal sales champion honor poster with restrained `618` cues, not a `618` discount promotion poster. `夏季冲刺` should become a summer sprint achievement poster, not a travel/music/event poster.
 
 ## Campaign Text vs Person Text
 

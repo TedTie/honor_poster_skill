@@ -21,6 +21,7 @@ Run this before delivery.
 - Final size is `3508 x 4961`.
 - Overall poster feels like one integrated ImageGen-designed honor artwork, not a local template composition.
 - Poster reads as a personal honor/achievement poster, not a generic promotion ad.
+- Theme elements support the honor message; they do not turn the output into an e-commerce banner, event flyer, product poster, or generic campaign ad.
 - Background complexity is controlled: one hero title, one portrait feature, one Toki moment, and only 2-3 theme symbols.
 - Campaign title and motivational line come from the month/theme, not from the personal title.
 - Logo is not centered by default and does not compete with the title.

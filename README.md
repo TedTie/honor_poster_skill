@@ -6,6 +6,8 @@
 
 这个 skill 默认输出 `3508px x 4961px` 的 PNG 海报。它会优先使用 ImageGen 生成整体视觉：艺术标题、符合主题的色彩与动势、合适的材质表现、奖章/舞台/卡片式人物窗口、Toki IP 和主题元素。红金、光效、丝带、3D 金属等只是可选的喜报表现手法，会根据月份/主题判断是否使用，不是固定模板元素。人物照片则作为锁定的原始照片层处理，原则上不让 ImageGen 重绘、换脸、美颜、改变衣服、改变发型或改变身形。
 
+不管主题怎么变化，海报类型始终必须是“个人喜报/荣誉海报”。主题只决定元素、色彩、道具、动势和材质，不能把成品变成电商促销海报、活动海报、产品海报或普通广告。例如 `6月 618 销冠` 应该是带有少量 618 氛围的销冠喜报，而不是 618 满减促销图。
+
 ## 适用场景
 
 - 个人销售达标喜报
@@ -29,6 +31,7 @@
 - 姓名、组别、个人称号等必须准确可读。
 - 主题标题和激励语根据月份/主题生成，不使用个人称号来代替主题标题。
 - 背景复杂度要受控，不能像促销广告一样堆满元素。
+- 喜报 DNA 必须保留：标题、祝贺/达标信息、人物照片、姓名、组别、个人称号、品牌 logo、Toki 和销售激励语都要服务于个人荣誉表彰。
 
 ## 必填信息
 
@@ -143,6 +146,8 @@
 
 The default output is a `3508px x 4961px` PNG poster. The skill uses ImageGen as the primary visual designer for the full poster: art typography, theme-appropriate color and motion, suitable material treatment, medal/stage/card portrait windows, Toki IP, and theme symbols. Red-gold motion, strong lighting, ribbons, fireworks, and 3D metallic effects are optional honor-poster tools selected according to the month/theme, not fixed template elements. The supplied portrait is treated as a locked original-photo layer and should not be redrawn, face-swapped, beautified, restyled, or reshaped by ImageGen.
 
+No matter how the theme changes, the output must remain a personal honor/recognition poster. The theme should control elements, colors, props, motion, and materials, but must not turn the result into an e-commerce promotion, event flyer, product poster, or generic ad. For example, `June 618 Sales Champion` should be a sales champion honor poster with restrained 618 cues, not a 618 discount promotion graphic.
+
 ## Use Cases
 
 - Personal sales target achievement posters
@@ -166,6 +171,7 @@ The default output is a `3508px x 4961px` PNG poster. The skill uses ImageGen as
 - Name, team, and personal title must be exact and readable.
 - Campaign titles and motivational copy must come from the month/theme, not from the personal title.
 - Background complexity must be controlled; the result should feel like a personal honor poster, not a crowded promotion ad.
+- Honor-poster DNA must stay visible: title, congratulation/target-hit message, portrait, name, team, personal title, brand logo, Toki, and motivational sales copy all serve personal recognition.
 
 ## Required Inputs
 
