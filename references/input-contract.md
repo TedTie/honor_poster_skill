@@ -6,21 +6,22 @@ Treat the request as a new campaign when the user says `这是新的`, provides 
 
 Required fields:
 
-- `个人照`
-- `姓名`
-- `组别`
-- `语言`: `中文` or `英文`
-- `个人称号`: normally starts with `最佳`
-- `月份/主题`
-- `是否同月统一排版`: `是` or `否`
+- portrait,
+- name,
+- team,
+- language: `中文` or `英文`,
+- personal title: normally starts with `最佳`,
+- month/theme,
+- same-month unified layout: `是` or `否`.
 
-Generate or infer:
+Generate or infer from the month/theme:
 
-- Poster title.
-- Target achievement congratulation.
-- Sales motivational copy.
-- Toki action, prop, and theme elements.
-- Style intensity, defaulting to `强冲刺感`.
+- campaign title,
+- target achievement congratulation,
+- sales motivational copy,
+- Toki action, prop, and location,
+- restrained theme elements,
+- style intensity, defaulting to `强冲刺感`.
 
 ## Continuation
 
@@ -29,12 +30,27 @@ If the user does not say this is new, keep:
 - month/theme,
 - layout continuity decision,
 - style intensity,
-- title system,
+- campaign title system,
+- achievement congratulation,
+- motivational line,
 - background visual DNA,
-- Toki proportions and role,
+- Toki role if same-month unified layout is `是`,
 - poster size.
 
 Ask only for missing variable data that blocks output.
+
+## Campaign Copy Rules
+
+Generate title and copy from the month/theme, not from the personal title.
+
+For example:
+
+- Theme: `6月 618 销冠`
+- Campaign title: `618 销冠荣耀`
+- Subtitle/theme strip: `六月战绩登峰`
+- Congratulation badge: `热烈祝贺`
+- Motivational line: `六月销冠，实力登峰`
+- Person title: `最牛气冲天的TL` stays near the person's name.
 
 ## Language Rules
 
@@ -43,6 +59,7 @@ Chinese:
 - Keep title large and bold.
 - Keep name and personal title visually strong.
 - Use neat centered alignment unless the design concept clearly calls for asymmetry.
+- Prefer compact, powerful copy over long lines.
 
 English:
 
@@ -53,25 +70,25 @@ English:
 
 ## Suggested Copy Patterns
 
-Chinese title examples:
+Chinese campaign titles:
 
+- `618 销冠荣耀`
+- `六月战绩登峰`
 - `一飞冲天`
-- `销售荣耀`
-- `达标之星`
-- `冲刺封神`
-- `荣耀登峰`
+- `目标达成`
+- `销售精英荣耀时刻`
 
-Chinese motivational line examples:
+Chinese motivational lines:
 
+- `六月销冠，实力登峰`
+- `战绩破浪，冲刺赢得高峰`
+- `一鼓作气向前，业绩再攀新峰`
 - `专业成就信任，冲刺赢得高峰`
-- `稳中突破，向目标全速进发`
-- `每一次成交，都是实力的证明`
-- `今日达标，是实力；持续达标，是王者`
 
 English equivalents:
 
+- `Sales Champion Glory`
 - `Target Achieved`
-- `Sales Glory`
 - `Skyrocket Success`
 - `Congratulations on hitting the target`
 - `Professional focus wins lasting trust`
