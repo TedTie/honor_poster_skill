@@ -4,7 +4,7 @@
 
 `honor-poster-skill` 用于制作 51Talk 风格的个人喜报、销售达标喜报、销冠喜报、新人欢迎海报和荣誉表彰海报。它的重点不是固定模板，而是把用户提供的月份/主题、人物资料、语言、个人称号和是否同月统一排版，转化成一张完整的高冲击感海报。
 
-这个 skill 默认输出 `3508px x 4961px` 的 PNG 海报。它会优先使用 ImageGen 生成整体视觉：艺术标题、红金流动感、3D 金属质感、奖章/舞台/卡片式人物窗口、Toki IP、光效、丝带和主题元素。人物照片则作为锁定的原始照片层处理，原则上不让 ImageGen 重绘、换脸、美颜、改变衣服、改变发型或改变身形。
+这个 skill 默认输出 `3508px x 4961px` 的 PNG 海报。它会优先使用 ImageGen 生成整体视觉：艺术标题、符合主题的色彩与动势、合适的材质表现、奖章/舞台/卡片式人物窗口、Toki IP 和主题元素。红金、光效、丝带、3D 金属等只是可选的喜报表现手法，会根据月份/主题判断是否使用，不是固定模板元素。人物照片则作为锁定的原始照片层处理，原则上不让 ImageGen 重绘、换脸、美颜、改变衣服、改变发型或改变身形。
 
 ## 适用场景
 
@@ -25,6 +25,7 @@
 - Toki 可以根据主题改变动作、服装、道具和位置，但不能改变矮胖梨形比例。
 - 个人照片必须保持原图，不主动抠图，不重绘人物，不改变人物长相。
 - 主标题、主题字、祝贺字优先由 ImageGen 生成艺术字。
+- 红金、强光效、丝带、烟花、金属质感等元素必须按主题判断是否使用，不是每张海报固定出现。
 - 姓名、组别、个人称号等必须准确可读。
 - 主题标题和激励语根据月份/主题生成，不使用个人称号来代替主题标题。
 - 背景复杂度要受控，不能像促销广告一样堆满元素。
@@ -140,7 +141,7 @@
 
 `honor-poster-skill` creates 51Talk-style personal honor posters, sales achievement posters, sales champion posters, onboarding posters, and recognition posters. It is not a fixed-template poster generator. It turns the user's month/theme, person details, language, personal title, and same-month layout choice into a polished high-impact poster.
 
-The default output is a `3508px x 4961px` PNG poster. The skill uses ImageGen as the primary visual designer for the full poster: art typography, red-gold motion, 3D metallic materials, medal/stage/card portrait windows, Toki IP, lighting, ribbons, and theme symbols. The supplied portrait is treated as a locked original-photo layer and should not be redrawn, face-swapped, beautified, restyled, or reshaped by ImageGen.
+The default output is a `3508px x 4961px` PNG poster. The skill uses ImageGen as the primary visual designer for the full poster: art typography, theme-appropriate color and motion, suitable material treatment, medal/stage/card portrait windows, Toki IP, and theme symbols. Red-gold motion, strong lighting, ribbons, fireworks, and 3D metallic effects are optional honor-poster tools selected according to the month/theme, not fixed template elements. The supplied portrait is treated as a locked original-photo layer and should not be redrawn, face-swapped, beautified, restyled, or reshaped by ImageGen.
 
 ## Use Cases
 
@@ -161,6 +162,7 @@ The default output is a `3508px x 4961px` PNG poster. The skill uses ImageGen as
 - Toki may change pose, outfit, prop, and placement according to the theme, but must keep the short chubby pear-shaped IP proportions.
 - The portrait must remain the original photo. Do not cut out, redraw, beautify, or alter the person's identity.
 - Main title, theme words, and congratulation words should be generated as ImageGen art typography when possible.
+- Red-gold palettes, strong glow, ribbons, fireworks, and metallic effects must be selected by theme; they are not mandatory for every poster.
 - Name, team, and personal title must be exact and readable.
 - Campaign titles and motivational copy must come from the month/theme, not from the personal title.
 - Background complexity must be controlled; the result should feel like a personal honor poster, not a crowded promotion ad.

@@ -39,7 +39,7 @@ Use bundled visual references when creating poster prompts:
    - Person-level: portrait, name, team, personal title.
 3. Generate campaign-level title and copy from the month/theme, not from the personal title. The personal title belongs in the person information area.
 4. Draft a compact design direction: honor-poster hierarchy, restrained theme elements, Toki action, portrait-window shape, top-left logo placement, and whether layout should be reused.
-5. Prepare ImageGen prompts for a complete poster frame/environment, not a blank background. The ImageGen design should include premium art typography, photo-window/frame, foreground depth, ribbons/light trails, Toki, and enough negative space for readable information.
+5. Prepare ImageGen prompts for a complete poster frame/environment, not a blank background. The ImageGen design should include premium art typography, photo-window/frame, foreground depth, Toki, theme-selected motion/material elements, and enough negative space for readable information.
 6. Reserve the portrait area as a chroma-key window (`#00FF00`) or clearly removable placeholder when local locked-photo compositing is needed.
 7. Do not ask ImageGen to regenerate the person's face/body. Place the original portrait underneath or inside the generated window as locked pixels.
 8. Inspect the result. If the original portrait does not fit the generated frame, revise the generated frame/window or adjust the original photo's proportional placement. Do not solve it by redrawing or cutting out the person.
@@ -59,6 +59,7 @@ Use bundled visual references when creating poster prompts:
 - Keep the 51Talk logo in the top-left brand zone by default. Use the bundled rounded transparent logo asset when compositing or as the prompt reference. Do not center it unless the user explicitly requests it or an approved same-month master layout already uses that placement.
 - Toki is proportion-locked but not template-locked. Recreate Toki from the IP proportion rules each time, with pose/props/location selected for the current theme.
 - Same-month unified layout means keep the same composition, background, title system, Toki role, frame, and information rhythm; only swap variable person data.
+- Visual effects are theme-dependent. Red-gold palettes, ribbons, fireworks, strong glow, and metallic effects are optional celebration tools, not mandatory elements. Choose color, motion, materials, and props from the current theme.
 
 ## Common Mistakes
 
