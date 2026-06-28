@@ -17,10 +17,15 @@ Run this before delivery.
 ## Visual Checks
 
 - Final size is `3508 x 4961`.
+- Overall poster feels like one integrated ImageGen-designed artwork, not a local template composition.
 - Portrait head is not cropped.
 - Face is centered enough for the frame.
 - Person and generated frame are aligned.
+- Portrait, frame, title, and lighting visually connect with each other.
 - Text is not tiny, crowded, or overlapping.
+- Main title and short celebration text use art typography or an equivalent generated style.
+- Local text corrections, if any, match the generated material and do not look like default fonts.
+- No obvious simple rectangles, plain circles, generic panels, or flat code-drawn shapes dominate the design.
 - Chinese/English line breaks look intentional.
 - Art typography does not contain wrong characters.
 - Toki proportions are short, chubby, pear-shaped.

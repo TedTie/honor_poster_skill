@@ -7,7 +7,7 @@ description: Use when creating 51Talk-style personal achievement, honor, sales t
 
 ## Overview
 
-Create polished personal honor posters for 51Talk-style sales achievements. Use ImageGen for dynamic red-gold / seasonal visual energy and art typography, then use deterministic compositing for accurate names, teams, titles, congratulatory copy, portrait placement, and 3508px x 4961px delivery.
+Create polished personal honor posters for 51Talk-style sales achievements. Use ImageGen as the primary art director for the whole poster: integrated background, portrait placement, medal/frame design, Toki, motion effects, and art typography should feel generated as one premium visual system. Use deterministic compositing only for final accuracy checks, minor text correction, export sizing, and fallback repairs.
 
 ## Default Poster Contract
 
@@ -29,28 +29,33 @@ Read when needed:
 
 1. Parse whether this is a new campaign or a continuation.
 2. Draft a compact design direction: title, achievement copy, motivational line, Toki action, theme elements, and whether layout should be reused.
-3. Use ImageGen for background, 3D art title, decorative motion elements, and Toki when needed. Do not rely on ImageGen for long or critical text.
-4. Use scripts or code-assisted compositing for portrait fitting, exact text, final size, and export.
-5. Inspect the rendered poster before delivery. If the portrait is cropped badly, title text is wrong, Toki proportions drift, or text is too small/misaligned, revise before showing the user.
-6. Save final user-facing files under the current workspace `outputs/` directory.
+3. Prepare ImageGen prompts for a whole-poster composition, not a blank background. Include the portrait as an identity/subject reference whenever possible so the person, frame, title, and effects align naturally.
+4. Generate or edit the whole poster with ImageGen first, including short art text such as the main title, subtitle, congratulation badge, and theme label. Keep exact variable text short and explicit.
+5. Inspect the ImageGen result. If the portrait misses the intended empty area, the title looks wrong, or the poster feels like a template collage, revise with ImageGen before any local compositing.
+6. Use scripts or code-assisted compositing only for final exact text fixes, size export, small logo correction, or checking portrait crop. These local layers must match the generated art style and must not look like simple rectangles, plain circles, or default fonts placed on top.
+7. Save final user-facing files under the current workspace `outputs/` directory.
 
 ## Production Rules
 
-- Prefer a hybrid workflow: ImageGen for visual richness, local compositing for accuracy.
-- Generate main art typography as separate transparent/cutout assets when the user wants "art text" or references premium Chinese posters.
-- For exact information text, render locally with reliable fonts and strong hierarchy: name, team, title, congratulation, month/theme.
-- Run portrait fitting before circular/medal masking. Never use a fixed crop that may cut the head.
+- Prefer an ImageGen-first workflow: the main poster should be one integrated generated design, not a locally assembled layout.
+- Generate main title, short subtitle, congratulation badge, and theme text as ImageGen art typography when possible.
+- For exact information text that ImageGen may misspell, first try a targeted ImageGen text-region edit. Use local text only as a last-mile correction, and style it to blend into the poster.
+- Do not build the main visual from simple local shapes, generic rounded boxes, flat panels, or ordinary system-font typography.
+- Run portrait fitting before any mask or edit guidance. Never use a fixed crop that may cut the head.
 - Preserve user-provided portrait identity. Do not beautify, redraw, or replace the person's face unless explicitly requested.
 - Same-month unified layout means keep the same composition, background, title system, Toki placement, frame, and info panel; only swap variable person data.
 
 ## Reusable Scripts
 
-- `scripts/portrait_safe_crop.py`: create a square/circle-ready portrait crop using background and skin-tone heuristics, then save a preview.
+- `scripts/portrait_safe_crop.py`: preflight portrait placement and create a crop/mask reference. This is not the main design method.
 - `scripts/validate_poster.py`: verify final PNG dimensions and basic file health.
 
 ## Common Mistakes
 
-- Using ImageGen for all text, causing wrong names, tiny copy, or scrambled Chinese.
+- Treating local code shapes and fonts as the poster design instead of using ImageGen for the whole visual.
+- Using ImageGen for long text without checking, causing wrong names, tiny copy, or scrambled Chinese.
+- Placing a portrait into a generated empty hole after the fact when ImageGen should have designed the frame around the person.
+- Using plain system fonts, flat panels, or simple circles that make the poster look like a template.
 - Cropping a portrait by fixed percentages and cutting the head or shoulders.
 - Making English layouts by simply shrinking text.
 - Letting Toki become tall, bean-shaped, humanoid, or long-limbed.
