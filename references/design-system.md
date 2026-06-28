@@ -90,7 +90,7 @@ If the poster starts to look like a promotion ad, remove shopping clutter and re
 
 Default vertical hierarchy, with visual freedom:
 
-1. Brand/logo in the top-left brand zone.
+1. Clean brand-safe area in the top-left zone for the official logo asset.
 2. Main art title.
 3. Month/theme strip or subtitle.
 4. Portrait in medal/card/hero frame.
@@ -155,10 +155,16 @@ If copy is too long, rewrite it shorter before shrinking.
 
 ## 51Talk Logo
 
-Use `assets/51talk-logo-reference.png` as the default brand asset. It is a rounded transparent PNG made from the user's provided official logo, so composite it directly when possible instead of redrawing it from memory. `assets/51talk-logo-original.png` is only a backup/reference for the uncropped rectangular version.
+Use `assets/51talk-logo-reference.png` as the default brand asset. It is a rounded transparent PNG made from the user's provided official logo, so composite it directly instead of redrawing it from memory. `assets/51talk-logo-original.png` is only a backup/reference for the uncropped rectangular version.
 
-Place the logo in the top-left brand zone by default, consistent with the user's poster habits. Keep enough safe margin from the poster edge and title. The logo may sit on the poster background as a clean rounded badge, but it should not look like a sharp pasted rectangle.
+ImageGen should not create the logo. Prompt ImageGen to leave a clean empty top-left brand-safe area only. Do not ask ImageGen to render any logo, brand text, yellow logo badge, or `51Talk` wordmark. The official asset is added once in local compositing after the generated poster frame is ready.
+
+Place the composited logo in the top-left brand zone by default, consistent with the user's poster habits. Keep enough safe margin from the poster edge and title. The logo may sit on the poster background as a clean rounded badge, but it should not look like a sharp pasted rectangle.
 
 Do not center the logo by default. Only use a centered logo when the user explicitly requests it, or when continuing an approved same-month master layout that already fixed the logo there.
 
-If the reference asset cannot be used directly, recreate or prompt a simple yellow rounded rectangle with blue `51Talk` text as the brand mark. Keep it visually integrated, not floating like a generic label. Do not invent extra official taglines unless the user provides them.
+Avoid any double-logo workflow: if ImageGen accidentally draws a fake logo, remove/regenerate that region or cover it cleanly before placing the official asset. Do not leave a ghosted generated logo under the official one. Do not invent extra official taglines unless the user provides them.
+
+Prompt snippet:
+
+`Top-left: leave a clean empty brand-safe area for the official 51Talk logo asset. Do not draw or render any logo, brand text, yellow logo badge, or 51Talk wordmark. The official logo will be composited later.`

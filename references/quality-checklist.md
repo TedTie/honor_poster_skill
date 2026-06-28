@@ -6,7 +6,8 @@ Run this before delivery.
 
 - Title is present and readable.
 - 51Talk logo is present in the top-left brand zone unless the user requested otherwise.
-- The bundled rounded logo asset is used or accurately referenced; the logo is not a sharp rectangular paste.
+- The bundled rounded logo asset is used once in final compositing; ImageGen did not create a fake logo underneath it.
+- There is no doubled, ghosted, overlapping, or misspelled 51Talk logo.
 - Portrait is present.
 - Name is exact.
 - Team is exact.

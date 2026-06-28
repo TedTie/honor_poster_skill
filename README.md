@@ -68,7 +68,7 @@
 
 Skill 会根据主题判断适合的色彩、动势、材质、道具和 Toki 表现方式。不同主题可以有不同风格，但成品始终应保持个人荣誉喜报的识别度。
 
-人物照片默认保持原图，不重绘、不换脸、不改变人物外貌。Toki 和 51Talk logo 会使用仓库中的参考资产，以保持品牌一致性。
+人物照片默认保持原图，不重绘、不换脸、不改变人物外貌。Toki 会参考仓库中的 IP 资产；51Talk logo 则使用官方圆角资产后期合成，避免生成错误或重叠的假 logo。
 
 ---
 
@@ -142,4 +142,4 @@ Same-month unified layout: yes
 
 The skill chooses color, motion, materials, props, and Toki treatment according to the theme. Different themes may look different, but the final output should always read as a personal honor poster.
 
-The original portrait is preserved by default: no face redraw, face swap, or identity change. Toki and the 51Talk logo use the bundled reference assets to keep brand consistency.
+The original portrait is preserved by default: no face redraw, face swap, or identity change. Toki follows the bundled IP reference asset. The 51Talk logo is composited later from the official rounded asset to avoid generated, misspelled, or overlapping fake logos.

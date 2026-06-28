@@ -28,7 +28,7 @@ Read when needed:
 Use bundled visual references when creating poster prompts:
 
 - `assets/toki-three-view-reference.png`: visual reference for Toki's fixed IP proportions and core features.
-- `assets/51talk-logo-reference.png`: default rounded transparent 51Talk logo asset for poster placement.
+- `assets/51talk-logo-reference.png`: default rounded transparent 51Talk logo asset for final compositing.
 - `assets/51talk-logo-original.png`: original rectangular logo backup/reference; use only if the user asks for the uncropped version.
 
 ## Workflow
@@ -38,12 +38,12 @@ Use bundled visual references when creating poster prompts:
    - Campaign-level: main title, subtitle/theme, congratulation badge, motivational sales line, visual motif, and Toki role.
    - Person-level: portrait, name, team, personal title.
 3. Generate campaign-level title and copy from the month/theme, not from the personal title. The personal title belongs in the person information area.
-4. Draft a compact design direction: honor-poster hierarchy, restrained theme elements, Toki action, portrait-window shape, top-left logo placement, and whether layout should be reused.
+4. Draft a compact design direction: honor-poster hierarchy, restrained theme elements, Toki action, portrait-window shape, top-left brand-safe area, and whether layout should be reused.
 5. Prepare ImageGen prompts for a complete poster frame/environment, not a blank background. The ImageGen design should include premium art typography, photo-window/frame, foreground depth, Toki, theme-selected motion/material elements, and enough negative space for readable information.
 6. Reserve the portrait area as a chroma-key window (`#00FF00`) or clearly removable placeholder when local locked-photo compositing is needed.
 7. Do not ask ImageGen to regenerate the person's face/body. Place the original portrait underneath or inside the generated window as locked pixels.
 8. Inspect the result. If the original portrait does not fit the generated frame, revise the generated frame/window or adjust the original photo's proportional placement. Do not solve it by redrawing or cutting out the person.
-9. Use scripts or code-assisted compositing only for locked portrait placement, transparent window removal, final exact text fixes, size export, small logo correction, or validation. These local layers must match the generated art style and must not look like simple rectangles, plain circles, or default fonts.
+9. Use scripts or code-assisted compositing only for locked portrait placement, transparent window removal, official logo placement, final exact text fixes, size export, or validation. These local layers must match the generated art style and must not look like simple rectangles, plain circles, or default fonts.
 10. Save final user-facing files under the current workspace `outputs/` directory.
 
 ## Production Rules
@@ -57,7 +57,7 @@ Use bundled visual references when creating poster prompts:
 - For exact information text that ImageGen may misspell, first try a targeted ImageGen text-region edit. Use local text only as last-mile correction, and style it to blend into the poster.
 - Do not build the main visual from simple local shapes, generic rounded boxes, flat panels, or ordinary system-font typography.
 - Run portrait fitting before any mask or edit guidance. Never use a fixed crop that may cut the head.
-- Keep the 51Talk logo in the top-left brand zone by default. Use the bundled rounded transparent logo asset when compositing or as the prompt reference. Do not center it unless the user explicitly requests it or an approved same-month master layout already uses that placement.
+- Keep the 51Talk logo in the top-left brand zone by default. ImageGen must leave a clean brand-safe area and must not draw, imitate, spell, or render the 51Talk logo, yellow logo badge, or wordmark. Add the bundled rounded transparent logo asset once during final compositing. Do not center it unless the user explicitly requests it or an approved same-month master layout already uses that placement.
 - Toki is proportion-locked but not template-locked. Recreate Toki from the IP proportion rules each time, with pose/props/location selected for the current theme.
 - Same-month unified layout means keep the same composition, background, title system, Toki role, frame, and information rhythm; only swap variable person data.
 - Visual effects are theme-dependent. Red-gold palettes, ribbons, fireworks, strong glow, and metallic effects are optional celebration tools, not mandatory elements. Choose color, motion, materials, and props from the current theme.
@@ -77,6 +77,7 @@ Use bundled visual references when creating poster prompts:
 - Letting Toki become tall, bean-shaped, humanoid, or long-limbed.
 - Reusing a fixed template when the user did not request same-month unified layout.
 - Recreating the 51Talk logo from memory when the bundled logo asset is available.
+- Letting ImageGen draw a fake 51Talk logo and then compositing the official asset on top, causing double logos or ghosting.
 
 ## Reusable Scripts
 
