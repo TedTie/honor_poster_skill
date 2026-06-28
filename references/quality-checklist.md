@@ -18,10 +18,13 @@ Run this before delivery.
 
 - Final size is `3508 x 4961`.
 - Overall poster feels like one integrated ImageGen-designed artwork, not a local template composition.
+- The person is the original supplied photo, not an AI-recreated or beautified lookalike.
+- The portrait is not cut out from its background unless the user explicitly requested cutout.
 - Portrait head is not cropped.
 - Face is centered enough for the frame.
 - Person and generated frame are aligned.
 - Portrait, frame, title, and lighting visually connect with each other.
+- Generated foreground effects do not cover or alter the face, body shape, clothing, or pose.
 - Text is not tiny, crowded, or overlapping.
 - Main title and short celebration text use art typography or an equivalent generated style.
 - Local text corrections, if any, match the generated material and do not look like default fonts.
